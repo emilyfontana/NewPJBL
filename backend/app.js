@@ -30,7 +30,7 @@ app.use(express.json()); //captar no formato json
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Epf100406!", // precisa colocar a sua senha do mysql
+    password: "", // precisa colocar a sua senha do mysql
     database: "pjbl"  //add o nome do schema
 });
 
