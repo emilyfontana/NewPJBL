@@ -111,5 +111,6 @@ O frontend roda em `http://localhost:3000`.
 5. Use `Editar`, `Excluir` ou `Ver` nas ações para gerenciar os dados
 
 
-## Projeto aprovado para a atividade
-Este projeto atende aos requisitos principais da atividade: frontend em React, backend em Express, CRUD completo, validações, comunicação com API via Fetch e banco de dados MySQL.
+## Imagem de desmonstração 
+
+<img width="1916" height="845" alt="image" src="https://github.com/user-attachments/assets/f69784cc-5392-4bf8-8f94-3018e8b61c83" />
