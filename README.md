@@ -113,3 +113,7 @@ O frontend roda em `http://localhost:3000`.
 
 ## Projeto aprovado para a atividade
 Este projeto atende aos requisitos principais da atividade: frontend em React, backend em Express, CRUD completo, validações, comunicação com API via Fetch e banco de dados MySQL.
+
+## Imagem Base 
+
+<img width="1913" height="932" alt="image" src="https://github.com/user-attachments/assets/bee5ecc2-8fe3-46cc-a534-6d3516b1709d" />
