@@ -1,17 +1,35 @@
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { AppBar, Toolbar, Box } from '@mui/material';
 
+
+
+//appbar faixa horizontal 
+//toolbar linha itens na barra com o espaçamento 
+//box é uma div 
+
+
+  
+//parte visual
+
+
+// Barra de informação com o nome do aluno e descrição do projeto.
 export default function Navbar() {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography sx={{ flexGrow: 1 }}>
-          EmySystem - Emily Fontana
-        </Typography>
-
-        <Button color="inherit" component={Link} to="/">Listagem</Button>
-        <Button color="inherit" component={Link} to="/cadastro">Cadastrar</Button>
+    <AppBar
+      position="static"
+      elevation={3} //sombra
+      sx={{
+        bgcolor: '#ffffff',
+        borderBottom: 2,
+        borderColor: 'rgba(218, 162, 241, 0.35)',
+        color: 'text.secondary',
+      }}
+    >
+      <Toolbar sx={{ justifyContent: 'center' }}>
+        <Box sx={{ textAlign: 'center' }}>
+          <h5>Feito por: Emily Pontes Fontana - Projeto experiência criativa</h5>
+        </Box>
       </Toolbar>
     </AppBar>
   );
 }
+
