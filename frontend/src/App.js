@@ -1,35 +1,38 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Listagem from './Listagem';
-import Formulario from './Formulario';
-import Detalhes from './Detalhes';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Container, Box } from '@mui/material';
+
+import Listagem from './pages/Listagem';
+import Formulario from './pages/Formulario';
+import Detalhes from './pages/Detalhes';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <header>
-          <h2>DevSystem</h2>
-          <nav>
-            <Link to="/">Listagem</Link>
-            <Link to="/cadastro" className="btn btn-edit">Novo Usuário</Link>
-          </nav>
-        </header>
+      
+      {/* Navbar */}
+      <Navbar />
 
-        <main>
+      {/* Conteúdo principal */}
+      <Container>
+        <Box mt={4}>
           <Routes>
             <Route path="/" element={<Listagem />} />
             <Route path="/cadastro" element={<Formulario />} />
             <Route path="/editar/:id" element={<Formulario />} />
             <Route path="/detalhes/:id" element={<Detalhes />} />
           </Routes>
-        </main>
+        </Box>
+      </Container>
 
-        <footer>
-          <p>Sistema Desenvolvido por: <strong>Emily Fontana</strong> | PJBL2 2025</p>
-        </footer>
-      </div>
+      {/* Rodapé */}
+      <footer style={{ textAlign: 'center', marginTop: '20px' }}>
+        <p>
+          Sistema Desenvolvido por: <strong>Emily Fontana</strong> | PJBL2 2025
+        </p>
+      </footer>
+
     </Router>
   );
 }
