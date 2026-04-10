@@ -111,6 +111,6 @@ O frontend roda em `http://localhost:3000`.
 5. Use `Editar`, `Excluir` ou `Ver` nas ações para gerenciar os dados
 
 
-## Imagem de desmonstração 
+## Imagem de demonstração 
 
 <img width="1916" height="845" alt="image" src="https://github.com/user-attachments/assets/f69784cc-5392-4bf8-8f94-3018e8b61c83" />
